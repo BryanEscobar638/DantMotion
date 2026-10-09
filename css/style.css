@@ -8,15 +8,22 @@
 :root {
   --blue: #2563EB;
   --purple: #7C3AED;
+  --green: #25D366;
+  --red: #DC2626;
   --white: #FFFFFF;
   --black: #0F172A;
+
+  /* Canales RGB para usar con rgba() manteniendo el color centralizado */
+  --blue-rgb: 37, 99, 235;
+  --purple-rgb: 124, 58, 237;
+  --green-rgb: 37, 211, 102;
 
   --bg-primary: #FFFFFF;
   --bg-secondary: #F8FAFC;
   --bg-card: #FFFFFF;
   --text-primary: #0F172A;
   --text-secondary: #475569;
-  --text-muted: #94A3B8;
+  --text-muted: #64748B;
   --border: #E2E8F0;
   --shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
   --shadow-hover: 0 8px 40px rgba(15, 23, 42, 0.12);
@@ -36,7 +43,7 @@
   --bg-card: #1E293B;
   --text-primary: #F1F5F9;
   --text-secondary: #CBD5E1;
-  --text-muted: #64748B;
+  --text-muted: #94A3B8;
   --border: #334155;
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
   --shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.4);
@@ -54,6 +61,7 @@ body {
   line-height: 1.6;
   transition: background var(--transition), color var(--transition);
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -64,6 +72,38 @@ a {
 ul { list-style: none; }
 
 img { max-width: 100%; display: block; }
+
+/* ===== Accesibilidad: foco visible ===== */
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ===== Accesibilidad: skip link ===== */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  z-index: 2000;
+  padding: 10px 18px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: top var(--transition);
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* ===== Sprite SVG (oculto visualmente) ===== */
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 
 .container {
   width: 100%;
@@ -92,7 +132,9 @@ img { max-width: 100%; display: block; }
   font-size: 0.95rem;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: all var(--transition);
+  transition: background var(--transition), color var(--transition),
+    border-color var(--transition), transform var(--transition),
+    box-shadow var(--transition), opacity var(--transition);
   text-align: center;
 }
 
@@ -104,7 +146,7 @@ img { max-width: 100%; display: block; }
 .btn--primary:hover {
   opacity: 0.9;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 8px 24px rgba(var(--blue-rgb), 0.35);
 }
 
 .btn--outline {
@@ -138,6 +180,13 @@ img { max-width: 100%; display: block; }
   transition: background var(--transition);
 }
 
+/* Fallback para navegadores sin backdrop-filter */
+@supports not ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
+  .header {
+    background: var(--bg-primary);
+  }
+}
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -146,10 +195,20 @@ img { max-width: 100%; display: block; }
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   color: var(--text-primary);
+}
+.logo__mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .logo span {
   color: var(--blue);

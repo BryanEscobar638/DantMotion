@@ -3,23 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DantMotion - Marketing Digital y Desarrollo de Software Web. Potencia tu negocio con estrategias digitales y soluciones web profesionales.">
-  <meta property="og:title" content="DantMotion - Marketing Digital & Desarrollo Web">
-  <meta property="og:description" content="Potencia tu negocio con estrategias digitales y soluciones web profesionales.">
+  <meta name="description" content="DantMotion - Desarrollo Web y Marketing Digital. Creamos sitios y aplicaciones web a la medida y potenciamos tu negocio con estrategias digitales.">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://dantmotion.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DantMotion - Desarrollo Web & Marketing Digital">
+  <meta property="og:description" content="Creamos sitios y aplicaciones web a la medida, y los potenciamos con marketing digital, diseño y contenido.">
   <meta property="og:type" content="website">
-  <title>DantMotion - Marketing Digital & Desarrollo Web</title>
+  <meta property="og:url" content="https://dantmotion.com/">
+  <meta property="og:site_name" content="DantMotion">
+  <meta property="og:locale" content="es_CO">
+  <!-- TODO: crear la imagen img/og-image.png (1200x630) -->
+  <meta property="og:image" content="https://dantmotion.com/img/og-image.png">
+  <meta property="og:image:alt" content="DantMotion - Desarrollo Web & Marketing Digital">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DantMotion - Desarrollo Web & Marketing Digital">
+  <meta name="twitter:description" content="Creamos sitios y aplicaciones web a la medida, y los potenciamos con marketing digital, diseño y contenido.">
+  <meta name="twitter:image" content="https://dantmotion.com/img/og-image.png">
+
+  <title>DantMotion - Desarrollo Web & Marketing Digital</title>
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fallback sin JavaScript: mostrar el contenido animado -->
+  <noscript><style>.fade-in { opacity: 1; transform: none; }</style></noscript>
+
+  <!-- Aplica el tema antes del primer render para evitar el parpadeo (FOUC) -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* almacenamiento no disponible */ }
+    })();
+  </script>
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DantMotion",
+    "description": "Agencia de desarrollo web y marketing digital.",
+    "url": "https://dantmotion.com/",
+    "email": "contacto@dantmotion.com",
+    "telephone": "+573217716506",
+    "image": "https://dantmotion.com/img/og-image.png",
+    "priceRange": "$$",
+    "areaServed": "CO"
+  }
+  </script>
 </head>
 <body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- Sprite de iconos SVG (reutilizable) -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"/>
+    </symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>
+    </symbol>
+    <symbol id="icon-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+    </symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="icon-window" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="7.5" cy="6" r="0.6"/><circle cx="10.5" cy="6" r="0.6"/>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+    </symbol>
+    <symbol id="icon-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+    </symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+    </symbol>
+  </svg>
 
   <!-- Header -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo">Dant<span>Motion</span></a>
-      <nav class="nav" id="nav">
+      <a href="#inicio" class="logo">
+        <img class="logo__mark" src="img/logo-mark.png" alt="" width="38" height="38">
+        Dant<span>Motion</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
         <ul class="nav__list">
           <li><a href="#inicio" class="nav__link">Inicio</a></li>
-          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#desarrollo" class="nav__link">Desarrollo Web</a></li>
+          <li><a href="#marketing" class="nav__link">Servicios</a></li>
           <li><a href="#portafolio" class="nav__link">Portafolio</a></li>
           <li><a href="#sobre-nosotros" class="nav__link">Sobre nosotros</a></li>
           <li><a href="#faq" class="nav__link">FAQ</a></li>
@@ -27,37 +150,147 @@
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro">
-          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro" aria-pressed="true">
+          <svg class="icon-sun" width="20" height="20" aria-hidden="true"><use href="#icon-sun"/></svg>
+          <svg class="icon-moon" width="20" height="20" aria-hidden="true"><use href="#icon-moon"/></svg>
         </button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
+  <main id="main">
+
   <!-- Hero -->
   <section class="hero" id="inicio">
     <div class="container hero__inner">
       <div class="hero__content fade-in">
-        <span class="hero__badge">Marketing Digital & Desarrollo Web</span>
-        <h1 class="hero__title">Potencia tu negocio con <span class="gradient-text">estrategias digitales</span> que generan resultados</h1>
-        <p class="hero__desc">Somos DantMotion, tu aliado en marketing digital y desarrollo de software web. Creamos soluciones personalizadas para llevar tu marca al siguiente nivel.</p>
+        <span class="hero__badge">Desarrollo Web & Marketing Digital</span>
+        <h1 class="hero__title">Desarrollamos el <span class="gradient-text">sitio web</span> que hace crecer tu negocio</h1>
+        <p class="hero__desc">Creamos sitios y aplicaciones web a la medida, y los potenciamos con marketing digital, diseño y contenido para que tu marca destaque y venda más.</p>
         <div class="hero__cta">
-          <a href="#contacto" class="btn btn--primary">Solicitar cotización</a>
-          <a href="#servicios" class="btn btn--outline">Ver servicios</a>
+          <a href="#contacto" class="btn btn--primary">Cotiza tu proyecto web</a>
+          <a href="#desarrollo" class="btn btn--outline">Ver desarrollo web</a>
         </div>
       </div>
-      <div class="hero__visual fade-in">
-        <div class="hero__shape"></div>
+      <div class="hero__visual fade-in" aria-hidden="true">
+        <div class="hero__logo">
+          <picture>
+            <source srcset="img/logo-dantmotion.webp" type="image/webp">
+            <img class="hero__logo-img" src="img/logo-dantmotion.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios - Desarrollo Web -->
+  <section class="section" id="desarrollo" data-service-group="desarrollo">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__tag">Servicios</span>
+        <h2 class="section__title">Desarrollo <span class="gradient-text">Web a la medida</span></h2>
+        <p class="section__desc">De una landing a un sistema completo: construimos la solución que tu negocio necesita.</p>
+      </div>
+      <div class="simple-grid simple-grid--wide">
+        <div class="simple-card fade-in">
+          <div class="simple-card__icon" aria-hidden="true">
+            <svg width="40" height="40"><use href="#icon-window"/></svg>
+          </div>
+          <h3 class="simple-card__name">Landing page</h3>
+          <p class="simple-card__detail">Una página enfocada en convertir visitantes en clientes.</p>
+          <a href="#contacto" class="btn btn--outline btn--small">Cotizar</a>
+        </div>
+        <div class="simple-card fade-in">
+          <div class="simple-card__icon" aria-hidden="true">
+            <svg width="40" height="40"><use href="#icon-code"/></svg>
+          </div>
+          <h3 class="simple-card__name">Sitio web corporativo</h3>
+          <p class="simple-card__detail">Presencia profesional con varias secciones y blog.</p>
+          <a href="#contacto" class="btn btn--outline btn--small">Cotizar</a>
+        </div>
+        <div class="simple-card fade-in">
+          <div class="simple-card__icon" aria-hidden="true">
+            <svg width="40" height="40"><use href="#icon-cart"/></svg>
+          </div>
+          <h3 class="simple-card__name">Tienda online</h3>
+          <p class="simple-card__detail">Vende por internet con catálogo, carrito y pagos.</p>
+          <a href="#contacto" class="btn btn--outline btn--small">Cotizar</a>
+        </div>
+        <div class="simple-card fade-in">
+          <div class="simple-card__icon" aria-hidden="true">
+            <svg width="40" height="40"><use href="#icon-layers"/></svg>
+          </div>
+          <h3 class="simple-card__name">Aplicación web a medida</h3>
+          <p class="simple-card__detail">Sistemas y paneles adaptados a tu operación.</p>
+          <a href="#contacto" class="btn btn--outline btn--small">Cotizar</a>
+        </div>
+        <div class="simple-card fade-in">
+          <div class="simple-card__icon" aria-hidden="true">
+            <svg width="40" height="40"><use href="#icon-tool"/></svg>
+          </div>
+          <h3 class="simple-card__name">Mantenimiento y soporte</h3>
+          <p class="simple-card__detail">Actualizaciones, respaldos y mejoras continuas.</p>
+          <a href="#contacto" class="btn btn--outline btn--small">Cotizar</a>
+        </div>
+      </div>
+      <div class="development-cta fade-in">
+        <a href="#contacto" class="btn btn--primary">Cotiza tu proyecto web</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section class="section section--alt" id="portafolio">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__tag">Portafolio</span>
+        <h2 class="section__title">Proyectos <span class="gradient-text">recientes</span></h2>
+        <p class="section__desc">Conoce algunos de los trabajos que hemos realizado</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item fade-in">
+          <div class="portfolio-item__thumb">
+            <img class="portfolio-item__img" src="img/proyectos/sis-1.webp" alt="Listado de estudiantes en el SIS, sistema escolar de la Fundación Liceo Inglés" loading="lazy">
+            <span class="portfolio-item__label">Desarrollo Web</span>
+          </div>
+          <div class="portfolio-item__info">
+            <h3>SIS — Sistema de información escolar</h3>
+            <p>Fundación Liceo Inglés</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in">
+          <div class="portfolio-item__thumb">
+            <img class="portfolio-item__img" src="img/proyectos/wssuite-1.webp" alt="Bandeja de conversaciones de WSSUITE, CRM de WhatsApp" loading="lazy">
+            <span class="portfolio-item__label">Desarrollo Web</span>
+          </div>
+          <div class="portfolio-item__info">
+            <h3>WSSUITE — CRM de WhatsApp</h3>
+            <p>API de WhatsApp de Meta</p>
+          </div>
+        </div>
+        <div class="portfolio-item fade-in">
+          <div class="portfolio-item__thumb">
+            <img class="portfolio-item__img" src="img/proyectos/campo-alegre-1.webp" alt="Dashboard del software de admisiones de la Escuela Campo Alegre" loading="lazy">
+            <span class="portfolio-item__label">Desarrollo Web</span>
+          </div>
+          <div class="portfolio-item__info">
+            <h3>Software de admisiones</h3>
+            <p>Escuela Campo Alegre</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-cta fade-in">
+        <a href="proyectos/" class="btn btn--primary">Ver todos los proyectos</a>
       </div>
     </div>
   </section>
 
   <!-- Servicios - Marketing Digital -->
-  <section class="section" id="servicios">
+  <section class="section" id="marketing" data-service-group="marketing">
     <div class="container">
       <div class="section__header fade-in">
         <span class="section__tag">Servicios</span>
