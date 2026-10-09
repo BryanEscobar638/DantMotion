@@ -484,7 +484,7 @@
             </ul>
           </div>
           <div class="featured-card__price-box">
-            <span class="featured-card__price">$350.000</span>
+            <span class="featured-card__price">$350.000 COP</span>
             <span class="featured-card__period">/ MES</span>
             <a href="#contacto" class="btn btn--primary">Lo quiero</a>
           </div>
@@ -493,82 +493,63 @@
     </div>
   </section>
 
-  <!-- Portafolio -->
-  <section class="section" id="portafolio">
-    <div class="container">
-      <div class="section__header fade-in">
-        <span class="section__tag">Portafolio</span>
-        <h2 class="section__title">Proyectos <span class="gradient-text">recientes</span></h2>
-        <p class="section__desc">Conoce algunos de los trabajos que hemos realizado</p>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item fade-in">
-          <div class="portfolio-item__thumb" style="background: linear-gradient(135deg, #2563EB, #7C3AED);">
-            <span class="portfolio-item__label">Próximamente</span>
-          </div>
-          <div class="portfolio-item__info">
-            <h3>Tu proyecto aquí</h3>
-            <p>Comienza a trabajar con nosotros</p>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <div class="portfolio-item__thumb" style="background: linear-gradient(135deg, #7C3AED, #2563EB);">
-            <span class="portfolio-item__label">Próximamente</span>
-          </div>
-          <div class="portfolio-item__info">
-            <h3>Tu proyecto aquí</h3>
-            <p>Comienza a trabajar con nosotros</p>
-          </div>
-        </div>
-        <div class="portfolio-item fade-in">
-          <div class="portfolio-item__thumb" style="background: linear-gradient(135deg, #1E293B, #2563EB);">
-            <span class="portfolio-item__label">Próximamente</span>
-          </div>
-          <div class="portfolio-item__info">
-            <h3>Tu proyecto aquí</h3>
-            <p>Comienza a trabajar con nosotros</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Sobre nosotros -->
-  <section class="section section--alt" id="sobre-nosotros">
+  <section class="section" id="sobre-nosotros">
     <div class="container">
       <div class="section__header fade-in">
         <span class="section__tag">Sobre nosotros</span>
         <h2 class="section__title">Conoce a <span class="gradient-text">DantMotion</span></h2>
       </div>
       <div class="about fade-in">
-        <div class="about__avatar">
-          <div class="about__avatar-placeholder">DM</div>
+        <div class="about__avatar" aria-hidden="true">
+          <img class="about__avatar-img" src="img/logo-mark.png" alt="">
         </div>
         <div class="about__content">
           <h3>Transformamos ideas en resultados digitales</h3>
-          <p>En DantMotion nos apasiona ayudar a negocios como el tuyo a crecer en el mundo digital. Combinamos estrategias de marketing digital con desarrollo de software web para crear soluciones completas que impulsan tu marca.</p>
-          <p>Nuestra misión es brindarte herramientas efectivas y asequibles para que puedas destacar en un mercado cada vez más competitivo.</p>
-          <div class="about__stats">
-            <div class="stat">
-              <span class="stat__number">+50</span>
-              <span class="stat__label">Proyectos realizados</span>
-            </div>
-            <div class="stat">
-              <span class="stat__number">+30</span>
-              <span class="stat__label">Clientes satisfechos</span>
-            </div>
-            <div class="stat">
-              <span class="stat__number">+3</span>
-              <span class="stat__label">Años de experiencia</span>
-            </div>
-          </div>
+          <p>Somos un equipo que combina estrategia de marketing, diseño gráfico y desarrollo web para que tu negocio se vea profesional y consiga más clientes.</p>
+          <p>Trabajamos con procesos claros y precios transparentes: tú te enfocas en tu negocio y nosotros en que tu marca destaque y venda mejor.</p>
+
+          <ul class="about__values">
+            <li class="about__value">
+              <span class="about__value-icon" aria-hidden="true">
+                <svg width="22" height="22"><use href="#icon-team"/></svg>
+              </span>
+              <div>
+                <strong>Un solo equipo</strong>
+                <span class="about__value-text">Estrategia, diseño y desarrollo web bajo un mismo techo.</span>
+              </div>
+            </li>
+            <li class="about__value">
+              <span class="about__value-icon" aria-hidden="true">
+                <svg width="22" height="22"><use href="#icon-tag"/></svg>
+              </span>
+              <div>
+                <strong>Precios claros</strong>
+                <span class="about__value-text">Planes flexibles y transparentes, sin sorpresas ni contratos forzosos.</span>
+              </div>
+            </li>
+            <li class="about__value">
+              <span class="about__value-icon" aria-hidden="true">
+                <svg width="22" height="22"><use href="#icon-chat"/></svg>
+              </span>
+              <div>
+                <strong>Atención cercana</strong>
+                <span class="about__value-text">Respuestas rápidas y acompañamiento en cada etapa de tu proyecto.</span>
+              </div>
+            </li>
+          </ul>
+
+          <p class="about__area">
+            <svg width="18" height="18" aria-hidden="true"><use href="#icon-map-pin"/></svg>
+            Atendemos toda Colombia, 100% remoto.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section" id="faq">
+  <section class="section section--alt" id="faq">
     <div class="container">
       <div class="section__header fade-in">
         <span class="section__tag">FAQ</span>
@@ -576,48 +557,58 @@
       </div>
       <div class="faq-list fade-in">
         <div class="faq-item">
-          <button class="faq-item__question">
+          <button type="button" class="faq-item__question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
             ¿Cómo funcionan los planes mensuales?
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-item__icon" width="20" height="20" aria-hidden="true"><use href="#icon-chevron"/></svg>
           </button>
-          <div class="faq-item__answer">
-            <p>Los planes son de suscripción mensual. Cada mes creamos y programamos el contenido acordado según el paquete que elijas. Puedes cancelar en cualquier momento.</p>
+          <div class="faq-item__answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+            <div>
+              <p>Los planes son de suscripción mensual. Cada mes creamos y programamos el contenido acordado según el paquete que elijas. Puedes cancelar en cualquier momento.</p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__question">
+          <button type="button" class="faq-item__question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
             ¿Qué métodos de pago aceptan?
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-item__icon" width="20" height="20" aria-hidden="true"><use href="#icon-chevron"/></svg>
           </button>
-          <div class="faq-item__answer">
-            <p>Aceptamos transferencia bancaria y pago en efectivo. Te enviaremos los datos de pago al confirmar tu servicio.</p>
+          <div class="faq-item__answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+            <div>
+              <p>Aceptamos transferencia bancaria y pago en efectivo. Te enviaremos los datos de pago al confirmar tu servicio.</p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__question">
+          <button type="button" class="faq-item__question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
             ¿Cuánto tiempo toma ver resultados?
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-item__icon" width="20" height="20" aria-hidden="true"><use href="#icon-chevron"/></svg>
           </button>
-          <div class="faq-item__answer">
-            <p>Los resultados varían según el plan y la industria, pero generalmente nuestros clientes comienzan a ver mejoras en engagement y alcance a partir del primer mes.</p>
+          <div class="faq-item__answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+            <div>
+              <p>Los resultados varían según el plan y la industria, pero generalmente nuestros clientes comienzan a ver mejoras en engagement y alcance a partir del primer mes.</p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__question">
+          <button type="button" class="faq-item__question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
             ¿Ofrecen servicios de desarrollo web?
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-item__icon" width="20" height="20" aria-hidden="true"><use href="#icon-chevron"/></svg>
           </button>
-          <div class="faq-item__answer">
-            <p>Sí, creamos landing pages, sitios web, aplicaciones web y tiendas online. Contáctanos para conocer más sobre nuestros paquetes de desarrollo.</p>
+          <div class="faq-item__answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+            <div>
+              <p>Sí, creamos landing pages, sitios web, aplicaciones web y tiendas online. Contáctanos para conocer más sobre nuestros paquetes de desarrollo.</p>
+            </div>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-item__question">
+          <button type="button" class="faq-item__question" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5">
             ¿Puedo combinar paquetes?
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-item__icon" width="20" height="20" aria-hidden="true"><use href="#icon-chevron"/></svg>
           </button>
-          <div class="faq-item__answer">
-            <p>¡Claro! Puedes combinar cualquier paquete de marketing con diseño gráfico y video. Contáctanos y armamos un plan personalizado para ti.</p>
+          <div class="faq-item__answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+            <div>
+              <p>¡Claro! Puedes combinar cualquier paquete de marketing con diseño gráfico y video. Contáctanos y armamos un plan personalizado para ti.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -625,7 +616,7 @@
   </section>
 
   <!-- Contacto -->
-  <section class="section section--alt" id="contacto">
+  <section class="section" id="contacto">
     <div class="container">
       <div class="section__header fade-in">
         <span class="section__tag">Contacto</span>
@@ -633,78 +624,132 @@
         <p class="section__desc">Cuéntanos sobre tu proyecto y te daremos una cotización personalizada</p>
       </div>
       <div class="contact fade-in">
-        <form class="contact__form" id="contactForm">
-          <input type="text" name="name" placeholder="Tu nombre" required>
-          <input type="email" name="email" placeholder="Tu correo electrónico" required>
-          <input type="tel" name="phone" placeholder="Tu teléfono">
-          <select name="service" required>
-            <option value="">Selecciona un servicio</option>
-            <option value="marketing">Marketing Digital</option>
-            <option value="diseno">Diseño Gráfico</option>
-            <option value="video">Video / Reels</option>
-            <option value="todo-en-uno">Paquete Todo en Uno</option>
-            <option value="desarrollo">Desarrollo Web</option>
-            <option value="otro">Otro</option>
-          </select>
-          <textarea name="message" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+        <form class="contact__form" id="contactForm" novalidate>
+          <!-- Honeypot antispam (oculto para personas) -->
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-field">
+            <label for="name">Tu nombre *</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required autocomplete="name"
+              aria-describedby="err-name" data-required-msg="Cuéntanos tu nombre.">
+            <p class="field-error" id="err-name" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="email">Tu correo electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required autocomplete="email"
+              aria-describedby="err-email" data-required-msg="Necesitamos tu correo para responderte.">
+            <p class="field-error" id="err-email" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="phone">Tu teléfono <span class="label-optional">(opcional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+57 300 0000000" autocomplete="tel" inputmode="tel">
+          </div>
+          <div class="form-field">
+            <label for="service">Servicio de interés *</label>
+            <select id="service" name="service" required aria-describedby="err-service"
+              data-required-msg="Selecciona un servicio.">
+              <option value="">Selecciona un servicio</option>
+              <option value="marketing">Marketing Digital</option>
+              <option value="diseno">Diseño Gráfico</option>
+              <option value="video">Video / Reels</option>
+              <option value="todo-en-uno">Paquete Todo en Uno</option>
+              <option value="desarrollo">Desarrollo Web</option>
+              <option value="otro">Otro</option>
+            </select>
+            <p class="field-error" id="err-service" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="message">Cuéntanos sobre tu proyecto *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required
+              aria-describedby="err-message" data-required-msg="Cuéntanos brevemente tu proyecto."></textarea>
+            <p class="field-error" id="err-message" hidden></p>
+          </div>
+
+          <div class="form-field form-field--check">
+            <input type="checkbox" id="privacy" name="privacy" required aria-describedby="err-privacy"
+              data-required-msg="Debes aceptar la política de privacidad.">
+            <label for="privacy">Acepto el tratamiento de mis datos personales según la
+              <a href="privacidad.html" target="_blank" rel="noopener noreferrer">política de privacidad</a>. *</label>
+            <p class="field-error" id="err-privacy" hidden></p>
+          </div>
+
           <button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-alt">¿Prefieres WhatsApp?
+            <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer">Escríbenos directamente</a>.
+          </p>
         </form>
         <div class="contact__info">
           <div class="contact__card">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg width="24" height="24" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
             <div>
               <strong>WhatsApp</strong>
-              <a href="https://wa.me/573217716506" target="_blank">+57 321 7716506</a>
+              <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer">+57 321 7716506</a>
             </div>
           </div>
           <div class="contact__card">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="24" height="24" aria-hidden="true"><use href="#icon-mail"/></svg>
             <div>
               <strong>Email</strong>
               <a href="mailto:contacto@dantmotion.com">contacto@dantmotion.com</a>
             </div>
           </div>
           <div class="contact__card">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+            <svg width="24" height="24" aria-hidden="true"><use href="#icon-card"/></svg>
             <div>
               <strong>Métodos de pago</strong>
               <span>Transferencia bancaria · Efectivo</span>
             </div>
           </div>
-          <a href="https://wa.me/573217716506" target="_blank" class="btn btn--primary btn--block">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block">
+            <svg width="20" height="20" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
             Escríbenos por WhatsApp
           </a>
         </div>
       </div>
+
+      <div class="contact__steps fade-in">
+        <h3 class="contact__steps-title">¿Qué pasa después?</h3>
+        <ol class="contact__steps-list">
+          <li>Nos cuentas tu proyecto con el formulario de arriba.</li>
+          <li>Te contactamos en menos de 24 horas hábiles.</li>
+          <li>Recibes una propuesta personalizada, sin compromiso.</li>
+        </ol>
+      </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#" class="logo">Dant<span>Motion</span></a>
-        <p>Marketing Digital & Desarrollo Web</p>
+        <a href="#inicio" class="logo">
+          <img class="logo__mark" src="img/logo-mark.png" alt="" width="38" height="38">
+          Dant<span>Motion</span>
+        </a>
+        <p>Desarrollo Web & Marketing Digital</p>
       </div>
       <div class="footer__social">
-        <a href="https://wa.me/573217716506" target="_blank" aria-label="WhatsApp">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="20" height="20" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
         </a>
-        <a href="#" target="_blank" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <!-- TODO: reemplazar por los perfiles reales cuando existan -->
+        <a href="#" aria-label="Instagram (próximamente)">
+          <svg width="20" height="20" aria-hidden="true"><use href="#icon-instagram"/></svg>
         </a>
-        <a href="#" target="_blank" aria-label="Facebook">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <a href="#" aria-label="Facebook (próximamente)">
+          <svg width="20" height="20" aria-hidden="true"><use href="#icon-facebook"/></svg>
         </a>
       </div>
-      <p class="footer__copy">&copy; 2026 DantMotion. Todos los derechos reservados.</p>
+      <p class="footer__copy">&copy; 2026 DantMotion. Todos los derechos reservados. · <a href="privacidad.html">Política de privacidad</a></p>
     </div>
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/573217716506" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+    <svg width="28" height="28" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
   </a>
 
   <script src="js/main.js"></script>
