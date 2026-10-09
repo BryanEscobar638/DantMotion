@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de DantMotion: proyectos de diseño gráfico, desarrollo web y video.">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://dantmotion.com/proyectos/">
+
+  <meta property="og:title" content="Proyectos - DantMotion">
+  <meta property="og:description" content="Diseño gráfico, desarrollo web y video. Conoce nuestros proyectos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dantmotion.com/proyectos/">
+  <meta property="og:site_name" content="DantMotion">
+
+  <title>Proyectos - DantMotion</title>
+
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <noscript><style>.fade-in { opacity: 1; transform: none; }</style></noscript>
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* almacenamiento no disponible */ }
+    })();
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- Sprite de iconos SVG -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="logo">
+        <img class="logo__mark" src="../img/logo-mark.png" alt="" width="38" height="38">
+        Dant<span>Motion</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../index.html#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="../index.html#desarrollo" class="nav__link">Desarrollo Web</a></li>
+          <li><a href="../index.html#marketing" class="nav__link">Servicios</a></li>
+          <li><a href="./" class="nav__link" aria-current="page">Portafolio</a></li>
+          <li><a href="../index.html#sobre-nosotros" class="nav__link">Sobre nosotros</a></li>
+          <li><a href="../index.html#faq" class="nav__link">FAQ</a></li>
+          <li><a href="../index.html#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro/claro" aria-pressed="true">
+          <svg class="icon-sun" width="20" height="20" aria-hidden="true"><use href="#icon-sun"/></svg>
+          <svg class="icon-moon" width="20" height="20" aria-hidden="true"><use href="#icon-moon"/></svg>
+        </button>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section page-top">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Portafolio</span>
+          <h1 class="section__title">Todos los <span class="gradient-text">proyectos</span></h1>
+          <p class="section__desc">Sistemas, sitios web y diseño. Filtra por categoría para ver lo que necesitas.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar proyectos por categoría">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter="diseno" aria-pressed="false">Diseño Gráfico</button>
+          <button type="button" class="filter-btn" data-filter="desarrollo" aria-pressed="false">Desarrollo Web</button>
+          <button type="button" class="filter-btn" data-filter="video" aria-pressed="false">Video</button>
+        </div>
+
+        <!--
+          Añade o edita proyectos aquí.
+          - `data-category`: diseno | desarrollo | video
+          - Para usar una imagen en vez del fondo degradado:
+              <img class="project-card__img" src="ruta.jpg" alt="Descripción" loading="lazy">
+        -->
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card fade-in" data-category="desarrollo" data-project="sis">
+            <div class="project-card__thumb">
+              <img class="project-card__img" src="../img/proyectos/sis-1.webp" alt="" loading="lazy">
+              <span class="project-card__cat">Desarrollo Web</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">SIS — Sistema de información escolar</h3>
+              <p class="project-card__desc">Sistema escolar a la medida para la Fundación Liceo Inglés: asistencia, notas, convivencia, comunicados y portal para familias en una sola plataforma.</p>
+              <ul class="project-card__tags">
+                <li class="project-tag">Portal de padres</li>
+                <li class="project-tag">Asistencia</li>
+                <li class="project-tag">Notas</li>
+                <li class="project-tag">PWA</li>
+              </ul>
+              <button type="button" class="project-card__more" aria-haspopup="dialog">Ver proyecto</button>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="desarrollo" data-project="wssuite">
+            <div class="project-card__thumb">
+              <img class="project-card__img" src="../img/proyectos/wssuite-1.webp" alt="" loading="lazy">
+              <span class="project-card__cat">Desarrollo Web</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">WSSUITE — CRM de WhatsApp</h3>
+              <p class="project-card__desc">Suite para operar la API de WhatsApp de Meta: chat en vivo, campañas masivas, plantillas y analíticas, con bot de IA y traspaso a agentes.</p>
+              <ul class="project-card__tags">
+                <li class="project-tag">API WhatsApp</li>
+                <li class="project-tag">CRM</li>
+                <li class="project-tag">Campañas</li>
+                <li class="project-tag">Tiempo real</li>
+              </ul>
+              <button type="button" class="project-card__more" aria-haspopup="dialog">Ver proyecto</button>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="desarrollo" data-project="campo-alegre">
+            <div class="project-card__thumb">
+              <img class="project-card__img" src="../img/proyectos/campo-alegre-1.webp" alt="" loading="lazy">
+              <span class="project-card__cat">Desarrollo Web</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Software de admisiones — Escuela Campo Alegre</h3>
+              <p class="project-card__desc">Digitaliza todo el proceso de admisión de la Escuela Campo Alegre: fichas, firmas, documentos, tours, notificaciones automáticas y chatbot con IA.</p>
+              <ul class="project-card__tags">
+                <li class="project-tag">Admisiones</li>
+                <li class="project-tag">n8n</li>
+                <li class="project-tag">Chatbot IA</li>
+                <li class="project-tag">ES/EN</li>
+              </ul>
+              <button type="button" class="project-card__more" aria-haspopup="dialog">Ver proyecto</button>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="diseno" data-project="seguros-oms">
+            <div class="project-card__thumb">
+              <img class="project-card__img" src="../img/proyectos/seguros-oms-1.webp" alt="" loading="lazy">
+              <span class="project-card__cat">Diseño Gráfico</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Publicidad para SEGUROS O.M.S</h3>
+              <p class="project-card__desc">Campaña de piezas para redes sociales: seguros de auto, familia, hogar, negocio y responsabilidad civil profesional.</p>
+              <ul class="project-card__tags">
+                <li class="project-tag">Diseño Gráfico</li>
+                <li class="project-tag">Redes sociales</li>
+                <li class="project-tag">Publicidad</li>
+              </ul>
+              <button type="button" class="project-card__more" aria-haspopup="dialog">Ver proyecto</button>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="diseno" data-project="cruz-roja">
+            <div class="project-card__thumb">
+              <img class="project-card__img" src="../img/proyectos/cruz-roja-1.webp" alt="" loading="lazy">
+              <span class="project-card__cat">Diseño Gráfico</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Piezas gráficas — Cruz Roja Colombiana</h3>
+              <p class="project-card__desc">Invitaciones y volantes para la Seccional Risaralda: capacitación sobre cambio climático, ceremonia de clausura y convocatoria de voluntariado.</p>
+              <ul class="project-card__tags">
+                <li class="project-tag">Diseño Gráfico</li>
+                <li class="project-tag">Volantes</li>
+                <li class="project-tag">Redes sociales</li>
+              </ul>
+              <button type="button" class="project-card__more" aria-haspopup="dialog">Ver proyecto</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects-empty" id="projectsEmpty" hidden>No hay proyectos en esta categoría todavía.</p>
+
+        <div class="projects-cta fade-in">
+          <p class="projects-cta__text">¿Tienes un proyecto en mente?</p>
+          <a href="../index.html#contacto" class="btn btn--primary">Hablemos de tu proyecto</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal de proyecto -->
+  <div class="modal" id="projectModal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal__close" data-close aria-label="Cerrar">×</button>
+      <div class="modal__gallery">
+        <div class="modal__stage">
+          <img class="modal__image" id="modalImage" src="" alt="">
+          <button type="button" class="modal__nav modal__nav--prev" aria-label="Imagen anterior">‹</button>
+          <button type="button" class="modal__nav modal__nav--next" aria-label="Imagen siguiente">›</button>
+          <p class="modal__caption" id="modalCaption"></p>
+        </div>
+        <div class="modal__thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="modal__content">
+        <span class="modal__cat" id="modalCat"></span>
+        <h2 class="modal__title" id="modalTitle"></h2>
+        <p class="modal__desc" id="modalDesc"></p>
+
+        <h3 class="modal__subtitle">Qué incluye</h3>
+        <ul class="modal__features" id="modalFeatures"></ul>
+
+        <h3 class="modal__subtitle" id="modalStackLabel">Tecnologías</h3>
+        <ul class="modal__tags" id="modalStack"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visor de imágenes a pantalla completa -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Cerrar visor">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+    <div class="lightbox__stage" id="lightboxStage">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    </div>
+    <div class="lightbox__tools">
+      <button type="button" class="lightbox__tool" id="lightboxZoomOut" aria-label="Alejar">−</button>
+      <button type="button" class="lightbox__tool" id="lightboxZoomIn" aria-label="Acercar">+</button>
+    </div>
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="logo">
+          <img class="logo__mark" src="../img/logo-mark.png" alt="" width="38" height="38">
+          Dant<span>Motion</span>
+        </a>
+        <p>Desarrollo Web & Marketing Digital</p>
+      </div>
+      <div class="footer__social">
+        <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="20" height="20" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+        </a>
+        <!-- TODO: reemplazar por los perfiles reales cuando existan -->
+        <a href="#" aria-label="Instagram (próximamente)">
+          <svg width="20" height="20" aria-hidden="true"><use href="#icon-instagram"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook (próximamente)">
+          <svg width="20" height="20" aria-hidden="true"><use href="#icon-facebook"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">&copy; 2026 DantMotion. Todos los derechos reservados. · <a href="../privacidad.html">Política de privacidad</a></p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/573217716506" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+    <svg width="28" height="28" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
