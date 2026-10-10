@@ -9,7 +9,7 @@
 Creamos sitios y aplicaciones web a la medida y los potenciamos con estrategia, diseño y
 contenido: un solo equipo para que tu marca se vea profesional y venda más.
 
-🌐 [dantmotion.com](https://dantmotion.com/) · 💬 [WhatsApp](https://wa.me/573217716506) · ✉️ [contacto@dantmotion.com](mailto:contacto@dantmotion.com)
+🌐 [dantmotion.com](https://dantmotion.com/) · 💬 [WhatsApp](https://wa.me/573217716506) · ✉️ [dantmotiondev@gmail.com](mailto:dantmotiondev@gmail.com)
 
 ---
 
@@ -51,7 +51,7 @@ contenido: un solo equipo para que tu marca se vea profesional y venda más.
 ¿Tienes un proyecto en mente? Escríbenos y te damos una cotización personalizada.
 
 - **WhatsApp:** [+57 321 7716506](https://wa.me/573217716506)
-- **Email:** [contacto@dantmotion.com](mailto:contacto@dantmotion.com)
+- **Email:** [dantmotiondev@gmail.com](mailto:dantmotiondev@gmail.com)
 - **Web:** [dantmotion.com](https://dantmotion.com/)
 
 ---
